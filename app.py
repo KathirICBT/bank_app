@@ -7,6 +7,7 @@ def get_customer_info():
     password = input('Enter the customer password: ')
     return [name, address, username, password]
 
+# Finding next customer id
 def create_next_customer_id():
     if not os.path.exists('customers.txt'):
         return 'C001'
@@ -37,3 +38,6 @@ def main():
         print('Invalid Input!')
 
 main()
+
+
+
